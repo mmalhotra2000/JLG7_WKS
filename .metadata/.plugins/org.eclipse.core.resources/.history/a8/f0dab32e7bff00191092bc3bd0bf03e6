@@ -1,0 +1,17 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		System.out.print("Hello, world");
+
+		// Numeric
+		// byte short int long
+
+		byte age_of_d$og = 12;
+		short ss = 34;
+		int sal = 45356;
+		long phoneNumber = 35654644647L;
+
+	}
+
+}
