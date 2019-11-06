@@ -1,0 +1,14 @@
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		// For loop
+
+		for (int count = 0; count < 5; count=count+1 ) {
+			System.out.println("value of count is "+count);
+		}
+
+	}
+
+}

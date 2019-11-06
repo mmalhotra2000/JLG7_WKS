@@ -1,0 +1,13 @@
+
+public class Array1 {
+	
+	public static void main(String[] args) {
+		
+		int[] days = {23,45,-90,56};
+		
+		System.out.println(days[3]);
+		
+		
+	}
+
+}
