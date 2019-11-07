@@ -1,0 +1,14 @@
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		
+		int res  = fact(5);
+
+	}
+
+	static int fact(int n) {
+		return n * fact(n - 1);
+	}
+
+}

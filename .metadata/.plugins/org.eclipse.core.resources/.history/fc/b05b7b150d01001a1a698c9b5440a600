@@ -1,0 +1,13 @@
+
+public class Method1 {
+
+	public static void main(String[] args) {
+
+	}
+
+	add(int x , int y){
+		int c =x+y;
+		return c;
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class Method1 {
+
+	public static void main(String[] args) {
+
+		int res = addTwoNum(2, 3);
+		System.out.println("res is " + res);
+
+	}
+
+	static int addTwoNum(int x, int y) {
+		int c = x + y;
+		return c;
+	}
+
+	static int addThreeNum(int x, int y, int z) {
+		int c = x + y;
+		return c;
+	}
+
+}
