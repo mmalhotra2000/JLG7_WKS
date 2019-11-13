@@ -1,0 +1,45 @@
+package edu.gyansetu.tcs.oops.intro;
+
+
+public class Account {
+
+	static int accNo = 90;
+	String accType;
+
+	Account(int accNum) {
+		System.out.println("Account called");
+		accNo = accNum;
+	}
+
+	void Account() {
+		System.out.println("Account called");
+
+	}
+
+	Account(int accNum, String accTy) {
+		System.out.println("Account called");
+		accNo = accNum;
+		accType = accTy;
+	}
+
+	static {
+		System.out.println("i am static block 1");
+	}
+
+	static int add(int a, int b) {
+		return a + b;
+	}
+
+	public static void main(String[] args) {
+
+		Account account = new Account(223, "SB");
+		account = null;
+		account.Account();
+
+		System.out.println(Account.add(21, 34));
+
+		// JVM :
+		// Account.main
+	}
+
+}

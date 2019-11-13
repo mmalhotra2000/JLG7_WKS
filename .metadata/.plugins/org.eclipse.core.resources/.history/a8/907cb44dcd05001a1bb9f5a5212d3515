@@ -1,0 +1,15 @@
+package edu.gyansetu.tcs.oops.intro;
+
+public class Wallet {
+
+	private int walletId;
+	String walletName;
+
+	public Wallet(int walletId, String walletName) {
+		this.walletId = walletId;
+		this.walletName = walletName;
+	};
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package edu.gyansetu.tcs.oops.intro;
+
+public class School {
+	
+	String name;
+	int yearOfEst;
+	int stdStr;
+
+}

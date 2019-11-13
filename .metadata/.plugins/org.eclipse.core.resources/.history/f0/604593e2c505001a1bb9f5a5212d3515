@@ -1,0 +1,29 @@
+package edu.gyansetu.tcs.oops.intro;
+
+public class Account {
+
+	int accNo;
+	String accType;
+
+	Account(int accNum) {
+		System.out.println("Account called");
+		accNo = accNum;
+	}
+
+	void Account() {
+		System.out.println("Account called");
+
+	}
+
+	Account(int accNum, String accTy) {
+		System.out.println("Account called");
+		accNo = accNum;
+		accType = accTy;
+	}
+
+	public static void main(String[] args) {
+
+		Account account = new Account(223, "SB");
+	}
+
+}
