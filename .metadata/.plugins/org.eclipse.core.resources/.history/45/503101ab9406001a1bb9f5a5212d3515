@@ -1,0 +1,18 @@
+package edu.gyansetu.tcs.oops.p1;
+
+import edu.gyansetu.tcs.oops.intro.inheritance.Employee;
+
+public class Manager extends Employee {
+
+	public int teamSize; // default : package private
+
+	public void reportProjectStatus() {
+		
+		System.out.println("reportProjectStatus");
+	}
+
+	
+	public int displayData() {
+		System.out.println(" emp is displaying some data");
+	}
+}

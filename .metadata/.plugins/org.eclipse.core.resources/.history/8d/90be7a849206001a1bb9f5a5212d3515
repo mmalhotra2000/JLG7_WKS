@@ -1,0 +1,9 @@
+package edu.gyansetu.tcs.oops.intro.inheritance;
+
+public class Employee {
+
+	private String name;
+	private String address;
+	private double exp;
+
+}

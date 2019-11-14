@@ -1,0 +1,12 @@
+package edu.gyansetu.tcs.oops.practice;
+
+public class TestCircle {
+
+	public static void main(String[] args) {
+		Circle circle = new Circle();
+
+		double rad = circle.getRadius();
+		System.out.println("rad is " + rad);
+	}
+
+}
