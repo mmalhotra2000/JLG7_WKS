@@ -1,0 +1,10 @@
+package edu.gyansetu.tcs.oops.p2;
+
+public interface Windows {
+	
+	public void installMSOffice();
+	
+	public void m1();
+
+
+}

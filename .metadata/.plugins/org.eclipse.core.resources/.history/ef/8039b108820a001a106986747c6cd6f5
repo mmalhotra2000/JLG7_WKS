@@ -1,0 +1,18 @@
+package edu.gyansetu.tcs.wrapper;
+
+import java.util.ArrayList;
+
+public class WrapperClass1 {
+
+	public static void main(String[] args) {
+
+		Integer num1 = 123;
+		Integer num2 = new Integer(123);
+
+		System.out.println(num1 + num2);
+
+		
+
+	}
+
+}

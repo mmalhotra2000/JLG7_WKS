@@ -1,0 +1,14 @@
+package edu.gyansetu.tcs.strings;
+
+public class TestString1 {
+	
+	public static void main(String[] args) {
+		
+		String name = "Mohit";
+		
+		String lastName =  new String("Malhotra");
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package edu.gyansetu.tcs.oops.p2;
+
+public class Circle extends Shape {
+
+	private double radius;
+
+	public Circle(double radius) {
+		super();
+		this.radius = radius;
+	}
+
+	public Circle(double radius, String color, boolean isFilled) {
+		super(color, isFilled);
+		this.radius = radius;
+	}
+
+}

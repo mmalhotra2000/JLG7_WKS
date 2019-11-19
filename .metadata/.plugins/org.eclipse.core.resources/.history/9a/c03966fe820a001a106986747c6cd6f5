@@ -1,0 +1,30 @@
+package edu.gyansetu.tcs.wrapper;
+
+public class WrapperClass1 {
+
+	public static void main(String[] args) {
+
+		Integer num1 = 123; // Integer.valueOf(123)
+		Integer num2 = new Integer(123);
+		Integer num3 = new Integer("1234");
+
+		// unboxing : wrapper - primitive
+		// auto boxing : primitive - wrapper
+
+		int num11 = num1;
+		// num1.intValue(); //unboxing
+
+		System.out.println(num1 + num2);
+
+		Integer i1 = 100;
+		Integer i2 = 100;
+
+		if (i1 == i2) {
+			System.out.println("same");
+		} else {
+			System.out.println("diff");
+		}
+
+	}
+
+}

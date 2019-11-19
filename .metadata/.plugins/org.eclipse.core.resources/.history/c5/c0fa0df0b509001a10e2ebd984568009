@@ -1,0 +1,7 @@
+package edu.gyansetu.tcs.oops.p2;
+
+public abstract class Shape {
+	
+	public abstract void m1() ;
+
+}

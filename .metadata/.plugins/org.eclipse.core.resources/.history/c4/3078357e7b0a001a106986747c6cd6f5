@@ -1,0 +1,25 @@
+package edu.gyansetu.tcs.strings;
+
+public class TestString1 {
+
+	public static void main(String[] args) {
+
+		// way 1
+		String name = "Mohit"; // ['M' , 'o' , 'h', 'i' , t'']
+
+		// way 2
+		String lastName = new String("Malhotra");
+
+		int index = name.indexOf('i');
+		System.out.println("index of i is " + index);
+
+		char someChar = lastName.charAt(5);
+
+		System.out.println(" someChar is " + someChar);
+		
+		
+		System.out.println(name.concat(lastName));
+
+	}
+
+}

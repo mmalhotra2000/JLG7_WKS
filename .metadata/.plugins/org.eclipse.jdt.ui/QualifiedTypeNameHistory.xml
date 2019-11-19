@@ -2,4 +2,26 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.School"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Counter"/>
+<fullyQualifiedTypeName name="javax.security.auth.login.AccountNotFoundException"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Account"/>
+<fullyQualifiedTypeName name="java.lang.Package"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Patient"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Wallet"/>
+<fullyQualifiedTypeName name="java.nio.channels.NetworkChannel"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.practice.Circle"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.practice.Book"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.practice.Author"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.inheritance.Manager"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.inheritance.Employee"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p1.Programmer"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p1.Manager"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Shape"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Rectangle"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Circle"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Windows"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Android"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Mobile"/>
 </qualifiedTypeNameHistroy>
