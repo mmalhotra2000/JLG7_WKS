@@ -1,0 +1,40 @@
+package edu.gyansetu.tcs.datastructures;
+
+public class MyLinkedList {
+
+	private MyNode start;
+	private int modCount=0;
+
+	class MyNode {
+		MyNode prev;
+		Object data;
+		MyNode next;
+
+		public MyNode(Object data) {
+			this.data = data;
+		}
+
+	}
+
+	public MyLinkedList() {
+		start = new MyNode(null);
+	}
+
+	public void add(Object data) {
+		MyNode myNode = new MyNode(data);
+		MyNode p = start ;
+		for( ;p!=null ; p = p.next) {
+		}
+		p.next = myNode;
+		myNode.prev = p;
+		modCount+;;
+	}
+
+	public Object[] toArray() {
+		
+		
+		
+		return null;
+	}
+
+}

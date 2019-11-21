@@ -1,0 +1,11 @@
+package edu.gyansetu.tcs.datastructures;
+
+public class MyLinkedList {
+
+	class MyNode {
+		MyNode prev;
+		Object data;
+		MyNode next;
+	}
+
+}

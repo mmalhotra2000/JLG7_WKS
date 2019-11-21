@@ -1,0 +1,12 @@
+package edu.gyansetu.tcs.exceptionhandling;
+
+public class UserNotFoundException extends Exception{
+
+	public UserNotFoundException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+}

@@ -1,0 +1,34 @@
+package edu.gyansetu.tcs.exceptionhandling;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class CompileTimeExp1 {
+
+	public static void main(String[] args) {
+
+		readFile();
+
+	}
+
+	private static void readFile() {
+
+		findFile();
+	}
+
+	private static void findFile() {
+
+		System.out.println("before exp");
+
+		try {
+			FileInputStream fileInputStream = new FileInputStream("/D:ddd/some.txt");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("after exp");
+
+	}
+
+}

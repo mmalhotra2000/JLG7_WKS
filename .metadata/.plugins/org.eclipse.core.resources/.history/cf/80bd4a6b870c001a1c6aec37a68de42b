@@ -1,0 +1,15 @@
+package edu.gyansetu.tcs.datastructures;
+
+public class TestLinkedList {
+	
+	public static void main(String[] args) {
+		
+		MyLinkedList linkedList1= new MyLinkedList();
+		
+		linkedList1.add(new Integer(23));
+		linkedList1.add(new Integer(45));
+		linkedList1.add(new Integer(78));
+		
+	}
+
+}
