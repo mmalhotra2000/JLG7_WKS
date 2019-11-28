@@ -1,0 +1,25 @@
+package edu.gyansetu.tcs.collections;
+
+import java.util.ArrayList;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+
+		ArrayList listOfNames = new ArrayList();
+
+		int age = 23;
+
+		listOfNames.add("mohit");
+		listOfNames.add(age);
+		listOfNames.add(23.3);
+
+		System.out.println("size is " + listOfNames.size());
+
+		Object o = listOfNames.get(0) * listOfNames.get(1);
+
+		System.out.println(listOfNames.get(2));
+
+	}
+
+}

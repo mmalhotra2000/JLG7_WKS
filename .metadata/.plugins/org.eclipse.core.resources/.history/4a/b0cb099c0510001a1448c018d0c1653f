@@ -1,0 +1,35 @@
+package edu.gyansetu.tcs.oops.revision.baisc;
+
+public class Acc {
+
+	private long accNum;
+	String accType;
+
+	public Acc(long accNu, String accType) {
+		accNum = accNu;
+		this.accType = accType;
+	}
+
+	public Acc() {
+
+	}
+
+	public long getAccNum() {
+		return accNum;
+	}
+
+	public void setAccNum(Acc acc1, long accNum) {
+		accNum = accNum;
+	}
+
+	public String getAccType() {
+		return accType;
+	}
+
+	public void setAccType(String accType) {
+		this.accType = accType;
+	}
+
+	
+	
+}

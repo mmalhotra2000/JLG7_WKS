@@ -1,7 +1,0 @@
-package edu.gyansetu.tcs.exceptionhandling;
-
-public class UserNotFoundException extends RuntimeException{
-
-	
-	
-}

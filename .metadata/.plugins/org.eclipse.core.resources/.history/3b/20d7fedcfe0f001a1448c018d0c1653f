@@ -1,0 +1,17 @@
+package edu.gyansetu.tcs.oops.revision.baisc;
+
+public class Calc {
+	
+	public static int addTwoNum(int a, int b) {
+		return a+b;
+	}
+	
+	public static int addThreeNum(int a, int b , int c) {
+		return a+b+c;
+	}
+	
+	public static int addFourNum(int a, int b, int c , int d) {
+		return a+b+c+d;
+	}
+
+}

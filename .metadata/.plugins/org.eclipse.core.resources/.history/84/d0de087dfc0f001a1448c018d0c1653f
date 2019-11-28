@@ -1,0 +1,15 @@
+package edu.gyansetu.tcs.oops.revision.baisc;
+
+public class Laptop {
+	
+	
+	int price;
+	String type;
+	
+	public static void main(String[] args){
+		
+		System.out.println("hello");
+		
+	}
+
+}

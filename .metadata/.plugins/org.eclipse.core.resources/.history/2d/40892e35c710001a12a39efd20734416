@@ -1,0 +1,17 @@
+package edu.gyansetu.tcs.collections;
+
+import java.util.ArrayList;
+
+import edu.gyansetu.tcs.oops.revision.baisc.Acc;
+
+public class TestArrayList3 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Acc> accs = new ArrayList<Acc>(10);
+		
+		
+	}
+
+}

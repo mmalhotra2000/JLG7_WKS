@@ -1,0 +1,24 @@
+package edu.gyansetu.tcs.oops.revision.baisc;
+
+public class Calc {
+
+	public static int add(int a, int b) {
+		return a + b;
+	}
+
+	public static double add(int a, int b) {
+		return a + b ;
+	}
+
+	public static int addFourNum(int a, int b, int c, int d) {
+		return a + b + c + d;
+	}
+
+	public static void main(String[] args) {
+
+		int res = addTwoNum(2, 3);
+		System.out.println("res is " + res);
+
+	}
+
+}
