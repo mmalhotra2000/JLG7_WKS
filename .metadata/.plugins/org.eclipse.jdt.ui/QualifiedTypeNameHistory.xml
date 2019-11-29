@@ -50,8 +50,14 @@
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.revision.baisc.Laptop"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.revision.baisc.Acc"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.WalletIdComparator"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.Wallet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.Remote"/>
 </qualifiedTypeNameHistroy>
