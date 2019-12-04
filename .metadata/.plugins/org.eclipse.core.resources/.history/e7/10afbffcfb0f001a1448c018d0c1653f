@@ -1,9 +1,0 @@
-package edu.gyansetu.tcs.oops.revision.baisc;
-
-public class Laptop {
-	
-	public void main(){
-		
-	}
-
-}

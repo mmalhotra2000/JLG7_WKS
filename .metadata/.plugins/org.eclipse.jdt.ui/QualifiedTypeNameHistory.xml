@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.School"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Counter"/>
-<fullyQualifiedTypeName name="javax.security.auth.login.AccountNotFoundException"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Account"/>
-<fullyQualifiedTypeName name="java.lang.Package"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Patient"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.Wallet"/>
-<fullyQualifiedTypeName name="java.nio.channels.NetworkChannel"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.practice.Circle"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.practice.Book"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.practice.Author"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.inheritance.Manager"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p1.Programmer"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p1.Manager"/>
@@ -36,9 +24,7 @@
 <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.datastructures.MyLinkedList"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.datastructures.MyLinkedList.MyNode"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.eqaulscontract.Car"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.eqaulscontract.Automobile"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.eqaulscontract.Department"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.intro.inheritance.Employee"/>
@@ -48,16 +34,30 @@
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.eqaulscontract.Book"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.p2.Windows"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.revision.baisc.Laptop"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.oops.revision.baisc.Acc"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.WalletIdComparator"/>
 <fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.Wallet"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.Remote"/>
+<fullyQualifiedTypeName name="com.assinment.iris.Price"/>
+<fullyQualifiedTypeName name="com.assinment.iris.Instrument"/>
+<fullyQualifiedTypeName name="java.lang.Package"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.revision.oops.inheritance.Parent"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.revision.oops.inheritance.Child1"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.datastructures.MyStack"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.Remote"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="edu.gyansetu.tcs.collections.Bag"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

@@ -12,3 +12,17 @@
 
 
 https://www.ntu.edu.sg/home/ehchua/programming/java/J3f_OOPExercises.html
+
+
+1) ArrayList practice : practiceit
+2) Codinbat https://codingbat.com/java , 
+2) gitbook theory plus hacker inheritnace
+
+4) Geeksforgeeks
+5) glassdoor 
+
+-- 4 dec 2019--
+1) use treeset and desc order of strings
+2) linkedhashmap , treemap
+3) https://codingbat.com/java
+4) https://practiceit.cs.washington.edu/problem/list : chapter 10 ,11

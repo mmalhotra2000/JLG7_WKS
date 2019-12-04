@@ -1,9 +1,0 @@
-package edu.gyansetu.tcs.oops.revision.baisc;
-
-public class AccTest {
-
-	public static void main(String[] args) {
-
-	}
-
-}
