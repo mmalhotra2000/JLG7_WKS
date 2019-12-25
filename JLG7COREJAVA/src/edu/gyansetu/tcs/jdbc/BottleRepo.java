@@ -1,20 +1,19 @@
 package edu.gyansetu.tcs.jdbc;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
-public class BottleRepo {
+public class BottleRepo extends BaseRepo{
 
-	Connection connection = null;
-	PreparedStatement preparedStatement = null;
+	
 
 	public void createBottle(Bottle bottle) throws MyProjectException {
 
 		String query = "insert into bottle values (?,?,?)";
 
 		try {
-			connection = DBManager.getConnectionFromCloud();
+			connection = DBManager.getConnection();
 			preparedStatement = connection.prepareStatement(query);
 			preparedStatement.setInt(1, bottle.getId());
 			preparedStatement.setString(2, bottle.getName());
@@ -41,4 +40,33 @@ public class BottleRepo {
 
 	}
 
+	public ArrayList<Bottle> findAll() {
+
+		String query = "select * from bottle";
+		ArrayList<Bottle> bottles = new ArrayList<>();
+
+		try {
+			connection = DBManager.getConnection();
+			preparedStatement = connection.prepareStatement(query);
+
+			Bottle bottle = null;
+
+			ResultSet resultSet = preparedStatement.executeQuery();
+
+			while (resultSet.next()) {
+				bottle = new Bottle();
+				bottle.setId(resultSet.getInt(1));
+				bottle.setName(resultSet.getString("name"));
+				bottle.setPrice(resultSet.getInt("price"));
+				bottles.add(bottle);
+			}
+		}
+
+		catch (SQLException exception) {
+			exception.printStackTrace();
+		}
+
+		return bottles;
+
+	}
 }

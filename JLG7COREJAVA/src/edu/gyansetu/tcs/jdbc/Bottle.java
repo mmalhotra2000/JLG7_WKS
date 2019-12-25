@@ -1,5 +1,6 @@
 package edu.gyansetu.tcs.jdbc;
 
+@MyTable(name = "bottle_table", values = {"abc","lklm"})
 public class Bottle {
 
 	private int id;
@@ -7,6 +8,8 @@ public class Bottle {
 	private String name;
 
 	private int price;
+	
+	//private String brand;
 
 	public Bottle(int id, String name, int price) {
 		super();
