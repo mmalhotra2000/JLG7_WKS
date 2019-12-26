@@ -1,5 +1,6 @@
 package edu.gs.test;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -16,20 +17,67 @@ public class TestHib1 {
 
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
-		testcase1(sessionFactory);
+		
+		// u1 : v1
+		// u1 : v2
+		// u2 : v1
+		// u2 : v2
+		
+		// testcase1(sessionFactory);
 
-		testcase2(sessionFactory);
+		// testcase2(sessionFactory);
+
+		Address address1 = new Address("gh1", "pach vihar");
+		Address address2 = new Address("ggn", "haryana");
+		Address address3 = new Address("delhi", "India");
+		Address address4 = new Address("gh2", "pach vihar");
+		Address address5 = new Address("gh3", "haryana");
+
+		Date currentDate = new Date();
+		Employee employee1 = new Employee("Mohit", "Malhotra", currentDate, currentDate, currentDate, "temp1");
+		Employee employee2 = new Employee("Rohit", "Malhotra", currentDate, currentDate, currentDate, "temp1");
+		// Employee employee3 = new Employee("Sumit", "Malhotra", currentDate,
+		// currentDate, currentDate, "temp1");
+
+		ArrayList<Address> addressesForEmp1 = new ArrayList<Address>();
+		addressesForEmp1.add(address1);
+		addressesForEmp1.add(address3);
+
+		ArrayList<Address> addressesForEmp2 = new ArrayList<Address>();
+		addressesForEmp2.add(address2);
+		addressesForEmp2.add(address4);
+		addressesForEmp2.add(address5);
+
+		// emp1 : add1 add3
+		// emp2 : add2 add4 add5
 		
+		address1.setEmployee(employee1);
+		address3.setEmployee(employee1);
 		
-		Address address1 =  new Address("gh1", "pach vihar");
-		Address address2 =  new Address("ggn", "haryana");
+		employee1.setAddresses(addressesForEmp1);
 		
-		Session session =  sessionFactory.openSession();
-		Transaction transaction= session.getTransaction();
+		address2.setEmployee(employee2);
+		address4.setEmployee(employee2);
+		address5.setEmployee(employee2);
+
+		employee2.setAddresses(addressesForEmp2);
+
+		Session session = sessionFactory.openSession();
+		Transaction transaction = session.getTransaction();
 		transaction.begin();
+
 		session.save(address1);
 		session.save(address2);
+		session.save(address3);
+		session.save(address4);
+		session.save(address5);
+
+		session.save(employee1);
+
+		session.save(employee2);
+
 		transaction.commit();
+
 		session.close();
 
 	}

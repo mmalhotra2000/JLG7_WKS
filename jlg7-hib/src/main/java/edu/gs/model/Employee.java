@@ -1,12 +1,17 @@
 package edu.gs.model;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,7 +22,8 @@ import javax.persistence.Transient;
 public class Employee {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ecap_employee_gen")
+	@SequenceGenerator(name = "ecap_employee_gen", sequenceName = "ecap_employee_sq", initialValue = 1, allocationSize = 1)
 	private long id;
 
 	// first_name
@@ -26,28 +32,27 @@ public class Employee {
 
 	@Column(name = "last_name")
 	private String lastName;
-	
+
 	@Temporal(TemporalType.DATE)
 	private Date doj;
-	
+
 	@Temporal(TemporalType.TIME)
 	private Date toj;
-	
+
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date fdoj;
-	
+
 	@Transient
-	private String oldFirstName; //  Dont : persist 
+	private String oldFirstName; // Dont : persist
+
+	@OneToMany(mappedBy="employee")
+	private List<Address> addresses;
 
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
-	
-	
 	public Employee(String firstName, String lastName, Date doj, Date toj, Date fdoj, String oldFirstName) {
 		super();
 		this.firstName = firstName;
@@ -57,10 +62,6 @@ public class Employee {
 		this.fdoj = fdoj;
 		this.oldFirstName = oldFirstName;
 	}
-
-
-
-
 
 	public Employee(long id, String firstName, String lastName, Date doj, Date toj, Date fdoj, String oldFirstName) {
 		super();
@@ -73,10 +74,6 @@ public class Employee {
 		this.oldFirstName = oldFirstName;
 	}
 
-
-
-
-
 	public Employee(long id, String firstName, String lastName, Date doj, Date toj, Date fdoj) {
 		super();
 		this.id = id;
@@ -86,8 +83,6 @@ public class Employee {
 		this.toj = toj;
 		this.fdoj = fdoj;
 	}
-
-
 
 	public Employee(long id, String firstName, String lastName) {
 		super();
@@ -118,6 +113,47 @@ public class Employee {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public Date getDoj() {
+		return doj;
+	}
+
+	public void setDoj(Date doj) {
+		this.doj = doj;
+	}
+
+	public Date getToj() {
+		return toj;
+	}
+
+	public void setToj(Date toj) {
+		this.toj = toj;
+	}
+
+	public Date getFdoj() {
+		return fdoj;
+	}
+
+	public void setFdoj(Date fdoj) {
+		this.fdoj = fdoj;
+	}
+
+	public String getOldFirstName() {
+		return oldFirstName;
+	}
+
+	public void setOldFirstName(String oldFirstName) {
+		this.oldFirstName = oldFirstName;
+	}
+
+	
+	public List<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
 	}
 
 	@Override

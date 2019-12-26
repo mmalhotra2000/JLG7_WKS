@@ -24,8 +24,10 @@
 
 		<!-- Drop and re-create the database schema on startup -->
 		<property name="hbm2ddl.auto">create</property>
-		
+
 		<mapping class="edu.gs.model.Employee" />
-		<mapping class="edu.gs.model.Address"/>
+		<mapping class="edu.gs.model.Address" />
+		<mapping class="edu.gs.test.Author" />
+		<mapping class="edu.gs.test.Book" />
 	</session-factory>
 </hibernate-configuration>
