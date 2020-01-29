@@ -17,16 +17,32 @@ public class TestHib1 {
 
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
-		
 		// u1 : v1
 		// u1 : v2
 		// u2 : v1
 		// u2 : v2
-		
+
 		// testcase1(sessionFactory);
 
 		// testcase2(sessionFactory);
 
+		testcase3(sessionFactory);
+
+		Session session = sessionFactory.openSession();
+		Employee employee1 = session.get(Employee.class, new Long(1));
+		session.close();
+
+		// business logic
+		System.out.println(employee1.getAddresses());
+		
+		// onetone ft : eager
+		// onetomany : lazy
+		// manytoone : eager
+		// manytomany : lazy
+
+	}
+
+	private static void testcase3(SessionFactory sessionFactory) {
 		Address address1 = new Address("gh1", "pach vihar");
 		Address address2 = new Address("ggn", "haryana");
 		Address address3 = new Address("delhi", "India");
@@ -50,12 +66,12 @@ public class TestHib1 {
 
 		// emp1 : add1 add3
 		// emp2 : add2 add4 add5
-		
+
 		address1.setEmployee(employee1);
 		address3.setEmployee(employee1);
-		
+
 		employee1.setAddresses(addressesForEmp1);
-		
+
 		address2.setEmployee(employee2);
 		address4.setEmployee(employee2);
 		address5.setEmployee(employee2);
@@ -66,11 +82,11 @@ public class TestHib1 {
 		Transaction transaction = session.getTransaction();
 		transaction.begin();
 
-		session.save(address1);
-		session.save(address2);
-		session.save(address3);
-		session.save(address4);
-		session.save(address5);
+		// session.save(address1);
+		// session.save(address2);
+		// session.save(address3);
+		// session.save(address4);
+		// session.save(address5);
 
 		session.save(employee1);
 
@@ -79,7 +95,6 @@ public class TestHib1 {
 		transaction.commit();
 
 		session.close();
-
 	}
 
 	private static void testcase2(SessionFactory sessionFactory) {

@@ -6,9 +6,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 
-@Entity
+import edu.gs.test.EmpAddTempModel;
+
+@NamedQueries({
+		@NamedQuery(name = "Address.getAddressByEmpFname", query = "select  a from address a where a.employee.firstName = ?1") })
+@NamedNativeQueries({
+		@NamedNativeQuery(name = "Address.getAddressPlusEmpByEmpFname", query = "select a.addLine1 , e.first_name , e.doj from ecap_employee e inner join address a on (e.id =a.id ) where e.first_name = ?1") })
+@Entity(name = "address")
 public class Address {
 
 	@Id
