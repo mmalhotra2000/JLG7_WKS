@@ -15,10 +15,13 @@ public class Book {
 	}
 
 	public int getId() {
+		System.out.println("getId");
 		return id;
 	}
 
 	public void setId(int id) {
+		System.out.println("setId");
+
 		this.id = id;
 	}
 

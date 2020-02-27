@@ -16,7 +16,7 @@ import com.bb.entity.Users;
 /**
  * Servlet implementation class IndexServlet
  */
-@WebServlet("/")
+//@WebServlet("/")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

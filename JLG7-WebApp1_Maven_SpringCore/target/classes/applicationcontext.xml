@@ -7,6 +7,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+	<context:component-scan
+		base-package="com.bb.spring"></context:component-scan>
+
+	<!-- Add a logger config to see logging messages. - For more detailed logs, 
+		set values to "FINEST" - For info on logging levels, see: http://www.vogella.com/tutorials/Logging/article.html -->
+	<bean id="myLoggerConfig"
+		class="com.bb.spring.core.test.MyLoggerConfig"
+		init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE" />
+		<property name="printedLoggerLevel" value="FINE" />
+	</bean>
+
 	<bean id="book" class="com.bb.spring.core.test.Book">
 		<property name="id" value="29" />
 		<property name="name" value="JAVA"></property>
@@ -17,5 +30,15 @@
 		<property name="id" value="29" />
 		<property name="name" value="JAVA"></property>
 	</bean>
+
+<!-- 	<bean id="myFortuneService"
+		class="com.bb.spring.core.test.HappyFortuneService">
+
+	</bean> -->
+
+	<!-- <bean id="myCoach" class="com.bb.spring.core.test.BaseBallCoach">
+		<constructor-arg ref="myFortuneService" />
+		<property name="id" value="232" />
+	</bean> -->
 
 </beans>
